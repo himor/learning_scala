@@ -29,5 +29,15 @@ object tres extends App {
     }
     
   println(fib(40));
+  
+  Storage.put("one", 2);
+  Storage.put("one", 1);
+  Storage.put("three", "number three");
+  
+  println(Storage.get("one"));
+  println(Storage.get("two"));
+  println(Storage.get("three"));
+  
+  
 	
 }
